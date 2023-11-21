@@ -233,6 +233,21 @@ nav{
     text-underline-offset: 0.5vh;
     animation: underline_hidden 0.5s;
 }
+.item1_5 div{
+    height: 75%;
+}
+.item2_5 div{
+    height: 75%;
+}
+.item3_5 div{
+    height: 75%;
+}
+.item4_5 div{
+    height: 75%;
+}
+.item5_5 div{
+    height: 75%;
+}
 
 @keyframes nav_elements {
     0% {max-height: min(1vh, 10px);}
