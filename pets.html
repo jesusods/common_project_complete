@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="css/reset.css"> 
+         <!-- Used the lightbox shown in class -->
+         <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <link rel = "stylesheet" href="css/style.css">
+    <title>Pets</title>
+</head>
+<body>
+    <header>
+        <h1>Pets</h1>
+    </header>
+    <a href="#main" id ="mainContent">Skip to Main Content</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Travel</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li class="current"><a class = "current_a" href="pets.html">Pets</a></li>
+        </ul>
+
+    </nav>
+    <div class="buttons_2">
+        <button class="button" onclick = "renderAll_pets()">All </button>
+        <button class="button" onclick = "dogs()"> Dogs </button>
+        <button class="button" onclick = "cats()">Cats </button>
+        </div>
+    <main id ="main">
+        <div class="cat">
+            <h2 class="recipes_h2">MiaoMiao</h2>
+            <div class="three_pictures_tablet">
+                <div class="item1_3_tablet">
+                    <p>MiaoMiao is the best cat in the world, extremely social with other, and vigilant against strangers. Oftentimes you can find her running around the house looking for things to eat. If she consumed anything other than cat food, she immediately throws up. </p>
+                    <p>She is chill and chirpy. Loves to play with anything other than professional cat toys. Also loves sitting on keyboards and joining Zoom calls.</p>
+                </div>
+                <a class="item2_3_tablet" href = "images/MiaoMiao.png" target="_blank" data-lightbox="MiaoMiao Picture" data-title="A picture of MiaoMiao resting on her divine throne." data-alt="MiaoMiao Picture">
+                <img class="item2_3_tablet" src="images/MiaoMiao.png" alt="A picture of MiaoMiao resting on her divine throne." title="MiaoMiao Picture" >
+                </a>
+                <div class="item3_3_tablet">
+                    <h3>Likes</h3>
+                    <ol>
+                        <li>Birds</li>
+                        <li>Ping-pong Balls</li>
+                        <li>Sleeping</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="pets_tablet">
+            <img class="pets_1_tablet" src="images/MiaoMiao_Sleeping.png" alt="MiaoMiao Sleeping with Favorite Toy" title="MiaoMiao Sleeping with Toy">
+            <img class="pets_2_tablet" src="images/MiaoMiao_Staring.png" alt="MiaoMiao Staring out the Window" title="MiaoMiao Staring" >
+            <img class="pets_3_tablet" src="images/MiaoMiao_Sunbathing.png" alt="MiaoMiao Sunbathing on Carpet" title="MiaoMiao Sunbathing" >
+            <img class="pets_4_tablet" src="images/MiaoMiao_in_Cabinet.png" alt="MiaoMiao in my Cabinet" title="MiaoMiao Cabinet">
+            </div>
+            <!--Kevin Wang, Zachary Abdirahman-->
+        </div>
+        <div class="dog">
+            <h2 class="recipes_h2">Yugi</h2>
+            <div class="three_pictures_tablet">
+                <div class="item1_3_tablet">
+                    <p>
+                        Yugi is a 7 year old chihuahua who loves love and adores attention. A member of the sassy dog community, he is full of personality and character with a response for everything. Nicknamed King Yugi, he holds himself as a true royal and leader of the home, being given all the luxuries in life by his humans.
+                    </p>
+                    <p>
+                        With the ability to love beyond his small body, Yugi is an attached lap dog that loves to be your sidekick. Protective, caring, and cuddly, there is never a time he isn’t there to support you and is always prepared for a short-notice nap time.
+                    </p>
+                </div>
+                <a class="item2_3_tablet" href = "images/yugi_sleepa.jpg" target="_blank" data-lightbox="Yugi Picture" data-title="Tan chihuahua sleeping on a black pillow" data-alt="Yugi Picture">
+                <img class="item2_3_tablet" src = "images/yugi_sleepa.jpg" alt = "Tan chihuahua sleeping on a black pillow" width="400">
+                </a>    
+                <div class="item3_3_tablet">
+                    <h3>Likes</h3>
+                    <ul class="unordered_list">
+                    <li>Cuddling</li>
+                    <li>Sleeping</li>
+                    <li>Doing tricks for treats</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Photo Gallery</h3>
+            <div class="pets_tablet">
+            <img class="pets_1_tablet" src = "images/yugi_sun.PNG" alt = "Yugi sunbathing" width = "200">
+            <img class="pets_2_tablet" src = "images/yugi_eyes.HEIC" alt = "A close up photo of natural light highlighting Yugi’s eyes." width= "200" >
+            <img class="pets_3_tablet" src = "images/yugi_nom.JPG" alt = "Yugi chomping on a finger" width= "200">
+            <img class="pets_4_tablet" src = "images/yugi_baby.JPG" alt = "Yugi as a chubby puppy sleeping" width= "200" >
+            </div>
+            <!-- Aileen Gonzalez -->
+
+        </div>
+        <div class="dog">
+            <h2 class="recipes_h2">Bacon Q Dog</h2>
+            <div class="three_pictures_tablet">
+                <div class="item1_3_tablet">
+                    <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
+                    <P>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</P>
+                </div>
+                <a class="item2_3_tablet" href = "images/bacon.jpg" target="_blank" data-lightbox="Bacon Picture" data-title="Brown labradoodle wearing colorful lei" data-alt="Bacon Picture">
+                <img class="item2_3_tablet" src="images/bacon.jpg"  alt="Brown labradoodle wearing colorful lei">
+                </a>
+                <div class="item3_3_tablet">
+                    <h3>Likes</h3>
+                    <ul class="unordered_list">
+                        <li>Belly rubs</li>
+                        <li>Playing tug-of-war</li>
+                        <li>Sneaking onto the couch</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Photo Gallery</h3>
+            <div class="pets_tablet">
+            <img class="pets_4_tablet" src="images/bacon_bandana.JPG" alt = "Brown labradoodle wearing an orange bandana">
+            <img class="pets_2_tablet" src="images/bacon_graduation.JPG" alt="Small labradoodle puppy wearing a graduation cap and gown">
+            <video class="pets_video_tablet" width="200"  controls>
+                <source src="images/bacon_agility.mov">
+                Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
+            </video>
+            <img class="pets_3_tablet" src="images/bacon_halloween.JPG"  width ="200" alt="Brown labradoodle wearing a pirate costume">
+            </div>
+            <!-- Colleen van Lent -->
+        
+        </div>
+        <div class="dog">
+            <h2 class="recipes_h2">Honey</h2>
+            <div class="three_pictures_tablet">
+                <div class="item1_3_tablet">
+                    <p>Honeys favorite thing in the world is swimming. Even if it is the middle of January and half of the lake is frozen, Honey will be in the water. She is a smart swimmer, so when my brother and I go underwater, she will follow our air bubbles and be waiting for us when we come up for air.</p>
+            <p>While most dogs like to chase balls or sticks, Honey likes to chase rocks. She will even chase rocks into the water and stick her whole face in the water to try and find the rock thrown. Chasing rocks is her main form of exercise right now as she refuses to go on walks from our house. If we drive her to another spot and walk from there, Honey will go on a walk but she refuses to leave our driveway when we try to walk from home. Finally one other Honey-ism is that her safe place is bathtubs. Many times our family has woken up in the middle of the night and found Honey is a bathtub</p>
+                </div>
+                <a class="item2_3_tablet" href = "images/honey_main.jpeg" target="_blank" data-lightbox="Honey Picture" data-title="Honey is a medium-sized golden retriever with honey brown fur." data-alt="Honey Picture">
+                <img class="item2_3_tablet" src="images/honey_main.jpeg" alt="Honey is a medium-sized golden retriever with honey brown fur.">
+                </a>
+                <div class="item3_3_tablet">
+                    <h3>Likes</h3>
+                    <ul class="unordered_list">
+                        <li>Likes rocks</li>
+                        <li>Likes food</li>
+                        <li>Likes attention</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Photo Gallery</h3>
+            <div class="pets_tablet">
+            <img  class="pets_1_tablet" width="200" src="images/honey_rock.jpeg" alt="Honey playing with a rock">
+            <img  class="pets_2_tablet" width="200" src="images/honey_sleeping.jpeg" alt="Honey taking a nap">
+            <img  class="pets_3_tablet" width="200" src="images/honey_smiling.jpeg" alt="Honey smiling">
+            <img  class="pets_4_tablet" width="200" src="images/honey_swimming.jpeg" alt="Honey swimming">
+            </div>
+            <!-- Abbie Tooman -->
+        </div>
+        <div class="cat">
+            <h2 class="recipes_h2">Jingle</h2>
+            <div class="three_pictures_tablet">
+                <div class="item1_3_tablet">
+                    <p>Jingle is a domestic shorthair cat with a white chest and belly and a striped black and gray back. His
+                        paws are
+                        white and they look like mittens.
+                        Jingle loves going outside. He used to be an outdoor/indoor cat until we realized that he loved to get
+                        injured.
+                        Now, we take him on walks with a leash which he loves! Every time he sees me carrying the leash he goes
+                        crazy
+                        and meows to go out.</p>
+        
+                    <p>Jingle is very mischievous, he has gotten into many different accidents. His first accident was outside;
+                        a bee
+                        stung his paw and he cried all night long. The second one was ALSO outside, he got stuck on a tree for
+                        four
+                        days. Finally, he came back home one day with his tail bleeding and ripped out.</p>
+                </div>
+                <a class="item2_3_tablet" href = "images/jingle.jpg" target="_blank" data-lightbox="Jingle Picture" data-title="Picture of Jingle" data-alt="Jingle Picture">
+                <img  class="item2_3_tablet" src="images/jingle.jpg" alt="Picture of Jingle" >
+            </a>
+                <div class="item3_3_tablet">
+                    <h3>Likes</h3>
+                    <ul class="unordered_list">
+                       <li>Going on walks.</li>
+                       <li>Being pet.</li>
+                       <li>Eating treats.</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Photo Gallery</h3> 
+            <div class="pets_tablet">
+            <img class="pets_1_tablet" src="images/jingle_outside.jpg" alt="A close-up picture of Jingle's face outside." width="200">
+            <img class="pets_2_tablet" src="images/jingle_flowers.jpg" alt="Jingle sitting next to the flowers in our garden." width="200">
+            <img class="pets_3_tablet" src="images/jingle_snow.jpg" alt="Jingle in the snow." width="200">
+            <img  class="pets_4_tablet" src="images/jingle_window.jpg" alt="Jingle watching the snow outside." width="200">
+            </div>
+            <!--Lynn Sabieddine -->
+
+        </div>
+
+    </main>
+    
+</body>
+<script src="dist/js/lightbox-plus-jquery.js"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'maxWidth': 200,
+        // 'wrapAround': true
+    })
+</script>
+</script>
+<script src="js/jsTablet.js"></script>
+<script>
+    renderAll_pets()
+</script>
+</html>
