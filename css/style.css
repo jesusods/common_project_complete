@@ -41,7 +41,6 @@ margin-top: 1vh;
 margin-bottom:  1vh;
 border-top-right-radius: 30px;   
 background-color: beige; 
-
 }
 
 nav >a{
@@ -69,57 +68,20 @@ border: 5px solid darkviolet
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+
 .two_pictures_travel{
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-.two_pictures_recipe_tablet{
-    display: grid;
-    grid-template-columns: 0.05fr 1fr 0.05fr 1fr;
-}
-.two_item1_recipe_tablet{
-    width: 90%;
-    height: 85%;
-    grid-area: 1 / 2;
-}
-.two_item2_recipe_tablet{
-    width: 90%;
-    height: 85%;
-    grid-area: 1 / 4;
-}
-.item1{
-    width: 90%;
-    height: 85%;
-    grid-area: 1 / 1;
+    grid-template-rows: 1fr 1fr;
 }
 .gif{
     width: 90%;
     height: 85%;
     grid-area: 1 / 2;
 }
-.item2{
-    width: 90%;
-    height: 85%;
-    grid-area: 2 / 2;
-}
-.item2_gif{
-    width: 90%;
-    height: 85%;
-    grid-area: 1 / 1;
-}
-.item3{
-    width: 90%;
-    height: 85%;
-    grid-area: 2 / 1;
-}
-.item4{
-    width: 90%;
-    height: 85%;
-    grid-area: 1 / 2;
-}
 .five_pictures{
     display: grid;
-    grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+    grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr;
     grid-template-rows: 1fr 1fr 1fr;
     border: solid 5px gold;
     border-top-right-radius: 30px;  
@@ -130,36 +92,60 @@ border: 5px solid darkviolet
 }
 .item2_5{
     height: 100%;
-    grid-area: 1 / 6;
+    grid-area: 1 / 4;
 }
 .item3_5{
     height: 100%;
-    grid-area: 2 / 4;
+    grid-area: 2 / 2;
 }
 .item4_5{
     height: 100%;
-    grid-area: 3 / 2;
+    grid-area: 2 / 4;
 }
 .item5_5{
     height: 100%;
-    grid-area: 3 / 6;
+    grid-area: 3 / 2 /  3 /  5;
 }
-.item1_5 div{
-    height: 75%;
-}
-.item2_5 div{
-    height: 75%;
-}
-.item3_5 div{
-    height: 75%;
-}
-.item4_5 div{
-    height: 75%;
-}
-.item5_5 div{
-    height: 75%;
+.three_pictures{
+    display: grid;
+    grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr;
+    grid-template-rows: 1fr 1fr;
+    border: solid 5px gold;
+    border-top-right-radius: 30px;  
 }
 
+.item1_3{
+    height: 100%;
+    grid-area: 1 / 2;
+}
+.item2_3{
+    height: 100%;
+    grid-area: 1 / 4;
+}
+.item3_3{
+    margin-top: 4vh;
+
+    height: 90%;
+    grid-area: 2 / 2 /  2 /  5;
+}
+
+/* To be resolved */
+.two_pictures_recipe{
+    display: grid;
+    grid-template-columns: 0.05fr 1fr 0.05fr 1fr;
+}
+.two_item1_recipe{
+    width: 90%;
+    height: 85%;
+    grid-area: 1 / 2;
+}
+.two_item2_recipe{
+    width: 90%;
+    height: 85%;
+    grid-area: 1 / 4;
+}
+
+/* To be resolved */
 .three_pictures{
     display: grid;
     grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr;
@@ -168,20 +154,6 @@ border: 5px solid darkviolet
     border-top-right-radius: 30px;  
 }
 
-.item1_3{
-    height: 40vh;
-    grid-area: 1 / 2;
-}
-.item2_3{
-    height: 40vh;
-    grid-area: 1 / 4;
-}
-.item3_3{
-    margin-top: 4vh;
-
-    height: 40vh;
-    grid-area: 2 / 2 /  2 /  5;
-}
 .unordered_list{
     text-align: center;
     font-size: min(3vw, 19px);;
@@ -378,4 +350,59 @@ display: none;
     text-align: center;
     border: 1vh blue solid;
     background-color: beige;
+}
+/* Tablet view */
+@media  screen and (min-width: 600px) {
+    .two_pictures_travel{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+    .five_pictures{
+        display: grid;
+        grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        border: solid 5px gold;
+        border-top-right-radius: 30px;  
+    }  
+    .item1_5{
+        height: 100%;
+        grid-area: 1 / 2;
+    }
+    .item2_5{
+        height: 100%;
+        grid-area: 1 / 6;
+    }
+    .item3_5{
+        height: 100%;
+        grid-area: 2 / 4;
+    }
+    .item4_5{
+        height: 100%;
+        grid-area: 3 / 2;
+    }
+    .item5_5{
+        height: 100%;
+        grid-area: 3 / 6;
+    }
+    .three_pictures{
+        display: grid;
+        grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr;
+        grid-template-rows: 0.5fr 0.25fr;
+        border: solid 5px gold;
+        border-top-right-radius: 30px;  
+    }
+    .item1_3{
+        height: 40vh;
+        grid-area: 1 / 2;
+    }
+    .item2_3{
+        height: 40vh;
+        grid-area: 1 / 4;
+    }
+    .item3_3{
+        margin-top: 4vh;
+    
+        height: 40vh;
+        grid-area: 2 / 2 /  2 /  5;
+    }
 }
