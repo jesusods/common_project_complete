@@ -400,6 +400,22 @@ display: none;
         height: 100%;
         grid-area: 3 / 6;
     }
+    .item1_5 div{
+        height: 75%;
+    }
+    .item2_5 div{
+        height: 75%;
+    }
+    .item3_5 div{
+        height: 75%;
+    }
+    .item4_5 div{
+        height: 75%;
+    }
+    .item5_5 div{
+        height: 75%;
+    }
+    
     .three_pictures{
         display: grid;
         grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr;
