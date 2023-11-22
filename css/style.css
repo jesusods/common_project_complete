@@ -258,7 +258,7 @@ nav{
         background-color: beige;}
     40% {font-size: 1vw;
         background-color: beige}
-    60% {ffont-size: 1.5vw;
+    60% {font-size: 1.5vw;
         background-color: beige}
     80% {font-size: 1.75vw;
         background-color: beige}
@@ -540,7 +540,6 @@ display: none;
     .pets{
         display: grid;
         grid-template-columns: 1fr 0.5fr 0.1fr 0.5fr 1fr;
-        grid-gap: 0.25fr;
         grid-template-rows: 1fr 1fr 1fr;
         border: solid 5px gold;
         border-top-right-radius: 30px;
@@ -691,7 +690,6 @@ display: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-gap: 0.1fr;
         border: solid 5px gold;
         border-top-right-radius: 30px;
     }
