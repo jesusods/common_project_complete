@@ -199,7 +199,7 @@ ol{
     background-color: darkslategray;  
 }
 nav ul{
-    border: solid 5vh green;
+    border: solid 1vw green;
     columns: 3;
 }
 nav li{
@@ -216,13 +216,13 @@ nav{
     background: lightyellow;
 }
 .current{
-    border-bottom: solid 1vh darkblue;
+    border-bottom: solid 0.5vh darkblue;
     background: lightblue;
 }
 .current_a{
     text-decoration: underline;
     text-decoration-color: #0000ff;
-    text-decoration-thickness: 0.5vh;
+    text-decoration-thickness: 0.1vh;
     text-underline-offset: 0.5vh;
     animation: underline_hidden 0.5s;
 }
@@ -333,6 +333,80 @@ display: none;
     text-align: center;
     border: 1vh blue solid;
     background-color: beige;
+}
+.button_america{
+    text-align: center;
+    border: 1vh blue solid;
+    background-color: beige;
+    background-image:  url(/images/templo_mayor.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text{
+
+    background-size: contain;
+    background-color: beige;
+    font-size: 50%;
+}
+.button_asia{
+    text-align: center;
+    border: 1vh blue solid;
+    background-color: beige;
+    background-image: url(/images/qinhuai.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.button_europe{
+    text-align: center;
+    border: 1vh blue solid;
+    background-color: beige;
+    background-image: url(/images/Barcelona_Beach.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.button_america_recipe{
+    text-align: center;
+    border: 1vh blue solid;
+    background-color: beige;
+    background-image:  url(/images/enchiladas_verde_de_pollo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.button_asia_recipe{
+    text-align: center;
+    border: 1vh blue solid;
+    background-color: beige;
+    background-image:  url(/images/tomato-egg-main-image.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.button_europe_recipe{
+    text-align: center;
+    border: 1vh blue solid;
+    background-color: beige;
+}
+.button_cat{
+    text-align: center;
+    border: 1vh blue solid;
+    background-color: beige;
+    background-image:  url(/images/MiaoMiao.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.button_dog{
+    text-align: center;
+    border: 1vh blue solid;
+    background-color: beige;
+    background-image:  url(/images/yugi_sleepa.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .big_button{
     text-align: center;

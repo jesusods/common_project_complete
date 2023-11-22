@@ -86,3 +86,20 @@ function cats(){
         divs[i].style.display = "block"
     }   
 }
+
+function increase_font_size(){
+
+    p = document.getElementsByTagName("p")
+    for (let i = 0; i < p.length; i++){
+        p[i].style.backgroundColor = "white";
+        p[i].style.fontSize = "2vw";
+    }
+    li = document.getElementsByTagName("li")
+    console.log(li);
+    for (let i = 3; i < li.length; i++){
+        li[i].style.backgroundColor = "white";
+        li[i].style.color = "black";
+        li[i].style.fontSize = "2vw";
+    }
+
+}
