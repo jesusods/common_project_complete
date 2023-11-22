@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="css/reset.css"> 
-         <!-- Used the lightbox shown in class -->
-         <link href="dist/css/lightbox.css" rel="stylesheet" />
-    <link rel = "stylesheet" href="css/style.css">
+     <!-- Used the lightbox shown in class -->
+     <link href="dist/css/lightbox.css" rel="stylesheet" />
+     <!-- Google font oswald https://fonts.google.com/specimen/Oswald  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+     <!-- Google icons  https://fonts.google.com/icons -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <link rel = "stylesheet" href="css/style.css">
     <title>Pets</title>
 </head>
 <body>
@@ -16,9 +22,20 @@
     <a href="#main" id ="mainContent">Skip to Main Content</a>
     <nav>
         <ul>
-            <li><a href="index.html">Travel</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li class="current"><a class = "current_a" href="pets.html">Pets</a></li>
+            <li><a href="index.html">Travel
+                <span class="material-symbols-outlined">
+                    card_travel
+                    </span></a></li>
+            <li><a href="recipes.html">Recipes
+                <span class="material-symbols-outlined">
+                    fastfood
+                    </span>
+            </a></li>
+            <li class="current"><a class = "current_a" href="pets.html">Pets
+                <span class="material-symbols-outlined">
+                    pets
+                    </span>
+            </a></li>
         </ul>
 
     </nav>
@@ -27,6 +44,9 @@
         <button class="button" onclick = "dogs()"> Dogs </button>
         <button class="button" onclick = "cats()">Cats </button>
         </div>
+    <div class="buttons_2">
+        <button class="big_button" onclick = "increase_font_size()">White background for text </button>
+    </div>
     <main id ="main">
         <div class="cat">
             <h2 class="recipes_h2">MiaoMiao</h2>
@@ -49,11 +69,11 @@
             </div>
 
             <h3>Photo Gallery</h3>
-            <div class="pets_tablet">
-            <img class="pets_1_tablet" src="images/MiaoMiao_Sleeping.png" alt="MiaoMiao Sleeping with Favorite Toy" title="MiaoMiao Sleeping with Toy">
-            <img class="pets_2_tablet" src="images/MiaoMiao_Staring.png" alt="MiaoMiao Staring out the Window" title="MiaoMiao Staring" >
-            <img class="pets_3_tablet" src="images/MiaoMiao_Sunbathing.png" alt="MiaoMiao Sunbathing on Carpet" title="MiaoMiao Sunbathing" >
-            <img class="pets_4_tablet" src="images/MiaoMiao_in_Cabinet.png" alt="MiaoMiao in my Cabinet" title="MiaoMiao Cabinet">
+            <div class="pets">
+            <img class="pets_1" src="images/MiaoMiao_Sleeping.png" alt="MiaoMiao Sleeping with Favorite Toy" title="MiaoMiao Sleeping with Toy">
+            <img class="pets_2" src="images/MiaoMiao_Staring.png" alt="MiaoMiao Staring out the Window" title="MiaoMiao Staring" >
+            <img class="pets_3" src="images/MiaoMiao_Sunbathing.png" alt="MiaoMiao Sunbathing on Carpet" title="MiaoMiao Sunbathing" >
+            <img class="pets_4" src="images/MiaoMiao_in_Cabinet.png" alt="MiaoMiao in my Cabinet" title="MiaoMiao Cabinet">
             </div>
             <!--Kevin Wang, Zachary Abdirahman-->
         </div>
@@ -81,11 +101,11 @@
                 </div>
             </div>
             <h3>Photo Gallery</h3>
-            <div class="pets_tablet">
-            <img class="pets_1_tablet" src = "images/yugi_sun.PNG" alt = "Yugi sunbathing" width = "200">
-            <img class="pets_2_tablet" src = "images/yugi_eyes.HEIC" alt = "A close up photo of natural light highlighting Yugi’s eyes." width= "200" >
-            <img class="pets_3_tablet" src = "images/yugi_nom.JPG" alt = "Yugi chomping on a finger" width= "200">
-            <img class="pets_4_tablet" src = "images/yugi_baby.JPG" alt = "Yugi as a chubby puppy sleeping" width= "200" >
+            <div class="pets">
+            <img class="pets_1" src = "images/yugi_sun.PNG" alt = "Yugi sunbathing" width = "200">
+            <img class="pets_2" src = "images/yugi_eyes.HEIC" alt = "A close up photo of natural light highlighting Yugi’s eyes." width= "200" >
+            <img class="pets_3" src = "images/yugi_nom.JPG" alt = "Yugi chomping on a finger" width= "200">
+            <img class="pets_4" src = "images/yugi_baby.JPG" alt = "Yugi as a chubby puppy sleeping" width= "200" >
             </div>
             <!-- Aileen Gonzalez -->
 
@@ -110,14 +130,14 @@
                 </div>
             </div>
             <h3>Photo Gallery</h3>
-            <div class="pets_tablet">
-            <img class="pets_4_tablet" src="images/bacon_bandana.JPG" alt = "Brown labradoodle wearing an orange bandana">
-            <img class="pets_2_tablet" src="images/bacon_graduation.JPG" alt="Small labradoodle puppy wearing a graduation cap and gown">
-            <video class="pets_video_tablet" width="200"  controls>
+            <div class="pets">
+            <img class="pets_4" src="images/bacon_bandana.JPG" alt = "Brown labradoodle wearing an orange bandana">
+            <img class="pets_2" src="images/bacon_graduation.JPG" alt="Small labradoodle puppy wearing a graduation cap and gown">
+            <video class="pets_video" width="200"  controls>
                 <source src="images/bacon_agility.mov">
                 Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
             </video>
-            <img class="pets_3_tablet" src="images/bacon_halloween.JPG"  width ="200" alt="Brown labradoodle wearing a pirate costume">
+            <img class="pets_3" src="images/bacon_halloween.JPG"  width ="200" alt="Brown labradoodle wearing a pirate costume">
             </div>
             <!-- Colleen van Lent -->
         
@@ -142,11 +162,11 @@
                 </div>
             </div>
             <h3>Photo Gallery</h3>
-            <div class="pets_tablet">
-            <img  class="pets_1_tablet" width="200" src="images/honey_rock.jpeg" alt="Honey playing with a rock">
-            <img  class="pets_2_tablet" width="200" src="images/honey_sleeping.jpeg" alt="Honey taking a nap">
-            <img  class="pets_3_tablet" width="200" src="images/honey_smiling.jpeg" alt="Honey smiling">
-            <img  class="pets_4_tablet" width="200" src="images/honey_swimming.jpeg" alt="Honey swimming">
+            <div class="pets">
+            <img  class="pets_1" width="200" src="images/honey_rock.jpeg" alt="Honey playing with a rock">
+            <img  class="pets_2" width="200" src="images/honey_sleeping.jpeg" alt="Honey taking a nap">
+            <img  class="pets_3" width="200" src="images/honey_smiling.jpeg" alt="Honey smiling">
+            <img  class="pets_4" width="200" src="images/honey_swimming.jpeg" alt="Honey swimming">
             </div>
             <!-- Abbie Tooman -->
         </div>
@@ -182,11 +202,11 @@
                 </div>
             </div>
             <h3>Photo Gallery</h3> 
-            <div class="pets_tablet">
-            <img class="pets_1_tablet" src="images/jingle_outside.jpg" alt="A close-up picture of Jingle's face outside." width="200">
-            <img class="pets_2_tablet" src="images/jingle_flowers.jpg" alt="Jingle sitting next to the flowers in our garden." width="200">
-            <img class="pets_3_tablet" src="images/jingle_snow.jpg" alt="Jingle in the snow." width="200">
-            <img  class="pets_4_tablet" src="images/jingle_window.jpg" alt="Jingle watching the snow outside." width="200">
+            <div class="pets">
+            <img class="pets_1" src="images/jingle_outside.jpg" alt="A close-up picture of Jingle's face outside." width="200">
+            <img class="pets_2" src="images/jingle_flowers.jpg" alt="Jingle sitting next to the flowers in our garden." width="200">
+            <img class="pets_3" src="images/jingle_snow.jpg" alt="Jingle in the snow." width="200">
+            <img  class="pets_4" src="images/jingle_window.jpg" alt="Jingle watching the snow outside." width="200">
             </div>
             <!--Lynn Sabieddine -->
 
