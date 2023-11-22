@@ -101,5 +101,23 @@ function increase_font_size(){
         li[i].style.color = "black";
         li[i].style.fontSize = "2vw";
     }
+}
+function things_change(){
+
+    things = document.getElementById("things")
+    console.log(document.getElementsByTagName("h2")[0]);
+    h2 = document.getElementsByTagName("h2")
+    h1 = document.getElementsByTagName("h1")[0].textContent
+    things.innerHTML = h1 + ": ";
+    let i = 0;
+    for ( ;i < h2.length-1; i++){
+        things.innerHTML += " ("+ h2[i].textContent + "),"
+    }
+    things.innerHTML += " and ("+ h2[i].textContent + ")."
+}
+function things_default(){
+    things = document.getElementById("things")
+    h1 = document.getElementsByTagName("h1")[0].textContent
+    things.innerHTML = h1 + ": ";
 
 }

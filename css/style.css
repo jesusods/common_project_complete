@@ -416,6 +416,13 @@ display: none;
     background-color: white;
     animation: show_change 1s;
 }
+.big_button_2{
+    text-align: center;
+    font-size: 3vw;
+    grid-area: 1/ 1 /1/4;
+    border: 1vh blue solid;
+    background-color: white;
+}
 /* Tablet view */
 @media  screen and (min-width: 600px) {
     .two_pictures_travel{
